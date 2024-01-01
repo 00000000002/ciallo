@@ -16,7 +16,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        display: none; /* 最初隐藏所有幻灯片 */
+        display: none; 
     }
     .center {
         width: 540px;
@@ -173,16 +173,16 @@ function color16() {
 }
 
 function load_sound() {
-  // 创建 Audio 元素
+
   const audio = new Audio();
 
-  // 设置音频文件的路径
+
   audio.src = "https://music.163.com/song/media/outer/url?id=2049743680";
 
-  // 设置循环播放
+
 //   audio.loop = true;
 
-  // 播放音频
+
   audio.play();
 
   // const req = new XMLHttpRequest();
@@ -207,21 +207,20 @@ function rotateImages() {
   var currentImageIndex = 0;
 
   setInterval(function () {
-    // 隐藏当前图片
+
     images[currentImageIndex].style.display = "none";
 
-    // 切换到下一张图片
+
     currentImageIndex = (currentImageIndex + 1) % images.length;
 
-    // 显示下一张图片
+
     images[currentImageIndex].style.display = "block";
 
-    // 触发渐变过渡效果
     container.style.opacity = 1;
     setTimeout(function () {
       container.style.opacity = 0;
-    }, 1000); // 设置延时等待图片切换完成
-  }, 5000); // 设置图片切换间隔，单位为毫秒
+    }, 1000); 
+  }, 5000); 
 }
   
 </script>
